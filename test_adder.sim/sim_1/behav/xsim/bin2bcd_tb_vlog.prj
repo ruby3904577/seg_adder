@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../test_adder.srcs/sources_1/new/bcd_modify.v" \
+"../../../../test_adder.srcs/sources_1/Binary2BCD/bcd_single_modify.v" \
+"../../../../test_adder.srcs/sources_1/Binary2BCD/bin2bcd.v" \
+"../../../../test_adder.srcs/sim_1/new/bin2bcd_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

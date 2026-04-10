@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Binary2BCD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Binary2BCD.tcl
+EAStep vivado -log key_cnt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source key_cnt.tcl

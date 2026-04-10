@@ -4,8 +4,10 @@ Mar  6 2025
 19:11:35
 D:/ruby/test/test_adder/test_adder.sim/sim_1/behav/xsim/glbl.v,1734094861,verilog,,,,glbl,,,,,,,,
 D:/ruby/test/test_adder/test_adder.srcs/sim_1/new/bin2bcd_tb.v,1775715386,verilog,,,,bin2bcd_tb,,,,,,,,
+D:/ruby/test/test_adder/test_adder.srcs/sim_1/new/seg8_tb.v,1775795990,verilog,,,,seg8_tb,,,,,,,,
 D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/Binary2BCD.v,1775703622,verilog,,D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/Binary2BCD_tb.v,,Binary2BCD,,,,,,,,
 D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/Binary2BCD_tb.v,1775704167,verilog,,,,Binary2BCD_tb,,,,,,,,
 D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/bcd_single_modify.v,1775706083,verilog,,D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/bin2bcd.v,,bcd_single_modify,,,,,,,,
 D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/bin2bcd.v,1775719379,verilog,,D:/ruby/test/test_adder/test_adder.srcs/sim_1/new/bin2bcd_tb.v,,bin2bcd,,,,,,,,
 D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/bcd_modify.v,1775717613,verilog,,D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/bcd_single_modify.v,,bcd_modify,,,,,,,,
+D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/seg8.v,1775794542,verilog,,D:/ruby/test/test_adder/test_adder.srcs/sim_1/new/seg8_tb.v,,seg8,,,,,,,,

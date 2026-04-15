@@ -56,12 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache C:/Users/74708/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-2464-helios_zt/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-2
 
@@ -77,6 +71,11 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/bcd2bin.v
+  D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/bcd_modify.v
+  D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/bcd_single_modify.v
+  D:/ruby/test/test_adder/test_adder.srcs/sources_1/Binary2BCD/bin2bcd.v
+  D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/key_adder.v
   D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/key_filter.v
   D:/ruby/test/test_adder/test_adder.srcs/sources_1/new/seg8.v
   D:/ruby/test/test_adder/test_adder.srcs/sources_1/full_adder/key_cnt.v

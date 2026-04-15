@@ -3,11 +3,11 @@
 # SW Build 6060944 on Thu Mar 06 19:10:01 MST 2025
 # IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
 # SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
-# Start of session at: Fri Apr 10 14:43:42 2026
-# Process ID         : 9056
+# Start of session at: Wed Apr 15 10:41:30 2026
+# Process ID         : 13732
 # Current directory  : D:/ruby/test/test_adder/test_adder.runs/impl_1
-# Command line       : vivado.exe -log seg8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source seg8.tcl -notrace
-# Log file           : D:/ruby/test/test_adder/test_adder.runs/impl_1/seg8.vdi
+# Command line       : vivado.exe -log key_cnt.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source key_cnt.tcl -notrace
+# Log file           : D:/ruby/test/test_adder/test_adder.runs/impl_1/key_cnt.vdi
 # Journal file       : D:/ruby/test/test_adder/test_adder.runs/impl_1\vivado.jou
 # Running On         : helios_zt
 # Platform           : Windows Server 2016 or Windows 10
@@ -17,8 +17,8 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 12
 # Host memory        : 16890 MB
-# Swap memory        : 19327 MB
-# Total Virtual      : 36218 MB
-# Available Virtual  : 14926 MB
+# Swap memory        : 26843 MB
+# Total Virtual      : 43734 MB
+# Available Virtual  : 4002 MB
 #-----------------------------------------------------------
-source seg8.tcl -notrace
+source key_cnt.tcl -notrace

@@ -1,0 +1,10 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.2.2
+| Date         : Wed Apr 15 10:40:28 2026
+| Host         : helios_zt
+| Design       : checkpoint_key_cnt_opt
+| Device       : xc7z020-clg484-2--
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+

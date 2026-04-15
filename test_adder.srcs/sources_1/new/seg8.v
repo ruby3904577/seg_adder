@@ -30,33 +30,35 @@ module seg8(
     
     always @(*)
         case(cnt_sel)
-            0:data_temp = seg_data[3:0];  //第一位
-            1:data_temp = seg_data[7:4];
-            2:data_temp = seg_data[11:8];
-            3:data_temp = seg_data[15:12];
-            4:data_temp = seg_data[19:16];
-            5:data_temp = seg_data[23:20];
-            6:data_temp = seg_data[27:24];
-            7:data_temp = seg_data[31:28];
-        endcase    
+                0:data_temp = seg_data[3:0];  //第一位
+                1:data_temp = seg_data[7:4];
+                2:data_temp = seg_data[11:8];
+                3:data_temp = seg_data[15:12];
+                4:data_temp = seg_data[19:16];
+                5:data_temp = seg_data[23:20];
+                6:data_temp = seg_data[27:24];
+                7:data_temp = seg_data[31:28];
+        endcase
+
+
     always @(posedge clk)
         case(data_temp)
-            0:seg <= 8'b1100_0000;
-            1:seg <= 8'b1111_1001;
-            2:seg <= 8'b1010_0100;
-            3:seg <= 8'b1011_0000;
-            4:seg <= 8'b1001_1001;
-            5:seg <= 8'b1001_0010;
-            6:seg <= 8'b1000_0010;
-            7:seg <= 8'b1111_1000;
-            8:seg <= 8'b1000_0000;
-            9:seg <= 8'b1001_0000;
-            4'ha:seg <= 8'b1000_1000;
-            4'hb:seg <= 8'b1000_0011;
-            4'hc:seg <= 8'b1100_0110;
-            4'hd:seg <= 8'b1010_0001;
-            4'he:seg <= 8'b1000_0110;
-            4'hf:seg <= 8'b1000_1110;
+                0:seg <= 8'b1100_0000;
+                1:seg <= 8'b1111_1001;
+                2:seg <= 8'b1010_0100;
+                3:seg <= 8'b1011_0000;
+                4:seg <= 8'b1001_1001;
+                5:seg <= 8'b1001_0010;
+                6:seg <= 8'b1000_0010;
+                7:seg <= 8'b1111_1000;
+                8:seg <= 8'b1000_0000;
+                9:seg <= 8'b1001_0000;
+                4'ha:seg <= 8'b1000_1000;
+                4'hb:seg <= 8'b1000_0011;
+                4'hc:seg <= 8'b1100_0110;
+                4'hd:seg <= 8'b1010_0001;
+                4'he:seg <= 8'b1000_0110;
+                4'hf:seg <= 8'b1000_1110;
         endcase
-                                
+
 endmodule

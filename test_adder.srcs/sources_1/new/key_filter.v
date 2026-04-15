@@ -2,7 +2,7 @@ module key_filter(
     input clk,
     input rst,
     input key_in,
-    output key_out
+    output key_out_s,key_out_f
 );
     reg key_in_sync1,key_in_sync2;
     reg key_in_reg1,key_in_reg2;
@@ -59,7 +59,7 @@ module key_filter(
         DOWN = 4'b0100,
         FILTER1 = 4'b1000; //状态定义
     reg [3:0] state;
-    reg key_flag,key_state;
+    reg key_flag,key_state;     //key_flag是状态切换的标志；key_state表示消抖后的稳定状态，0表示按下稳定，1表示释放稳定
         
     always @(posedge clk or posedge rst)
         if (rst) begin
@@ -124,6 +124,7 @@ module key_filter(
                     end
             endcase                        
         end    
-    assign key_out = key_state;
+    assign key_out_s = key_state;
+    assign key_out_f = key_flag;
         
 endmodule
